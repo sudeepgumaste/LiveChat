@@ -1,0 +1,24 @@
+{
+  "name": "live-chat",
+  "version": "0.0.1",
+  "description": "Realtime chat app with rooms implemented with express and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "watch": "nodemon server"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Sudeep Gumaste",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
