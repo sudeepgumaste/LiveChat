@@ -3,8 +3,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const http = require('http');
 const socketio = require('socket.io');
-const { formatMessage } = require('./utils/messages');
-const { userJoin, getCurrentUser, userLeave } = require('./utils/users');
+const { formatMessage } = require('./express/utils/messages');
+const { userJoin, getCurrentUser, userLeave } = require('./express/utils/users');
 dotenv.config();
 
 const app = express();
