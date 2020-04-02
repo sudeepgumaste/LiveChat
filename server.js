@@ -14,7 +14,7 @@ const io = socketio(server);
 // setting static port
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'ChatCord Bot';
+const botName = 'LiveChat Bot';
 
 // Run when client connects
 io.on('connection', socket => {
@@ -22,7 +22,7 @@ io.on('connection', socket => {
     const user = userJoin(socket.id, username, room);
     socket.join(user.room);
     // single client -> socket.emit
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatCord!'));
+    socket.emit('message', formatMessage(botName, 'Welcome to LiveChat!'));
     // broadcast when use connects
     // broadcast to everone except the new connection
     socket.broadcast.to(user.room).emit(
