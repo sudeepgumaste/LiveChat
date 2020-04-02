@@ -4,8 +4,8 @@
   "description": "Realtime chat app with rooms implemented with express and socket.io",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "watch": "nodemon server"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "keywords": [
     "chat"
